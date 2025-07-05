@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+}
+.logo {
+     font-family: "Monoton", sans-serif;
+}
+.logo h1 {
+    font-weight: 400;
+     font-size: 30px;
+
+}
+.firstSection {
+    height: 250vh;
+}
+.introduction {
+    width: 500px;
+
+    padding: 20px;
+}
+.introduction h1 {
+    font-size: 5rem;
+    margin-bottom: 15px;
+    font-family: "Italiana", sans-serif;
+}
+.introduction p {
+    font-family: "Raleway", sans-serif;
+}
+.products {
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    height: 30px;
+    padding: 30px 20px;
+    border: 1px solid rgb(205, 197, 197);
+    font-family: "Raleway", sans-serif;
+}
+/*sample*/
+.image1 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://mysleepyhead.com/media/catalog/product/4/t/4thaug_2ndhalf5934_green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image1:hover {
+    background-image: url(https://m.media-amazon.com/images/I/61c3HJlDUpL.jpg);
+}
+.image2 {
+    
+    height: 500px;
+    width: 500px;
+    background-image: url(https://www.daals.co.uk/cdn/shop/files/BOSF-9381-TAUPE-BOU-5ST-LS_scene1.jpg?v=1742396620);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image2:hover {
+    background-image: url(https://www.daals.co.uk/cdn/shop/files/BOSF-9381-BEIGE-BOU-4ST-CORNER_main.jpg?v=1705428046);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.image3 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://ak1.ostkcdn.com/images/products/is/images/direct/f573c2964c8ba9ffff431c831d4640011e7967cb/Modern-Chenille-sofa-with-two-throw-pillows-for-living-room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image3:hover {
+    background-image: url(https://verpan.com/cdn/shop/files/240507_EH_VERPAN_GALAXIE_DAY20623_800x.jpg?v=1739201952);
+}
+.containProduct1 {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.containProduct1 .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.containImage1 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(219, 215, 215);
+}
+
+.containImage1 .text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  height: 60px;
+}
+.containImage1 .hover {
+    font-size: 15px ;
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.containImage1 .hover p{
+    color: rgb(135, 132, 132);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+ .hover a {
+    color: black;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.containImage1:hover .hover p{
+    opacity: 1;
+}
+.containImage1:hover .hover a {
+    opacity: 1;
+}
+/*2*/
+.image4 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://m.media-amazon.com/images/I/71D2YNJoNNL._UF1000,1000_QL80_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image4:hover {
+    background-image: url(https://m.media-amazon.com/images/I/713iJYS8jDL.jpg);
+}
+.image5 {
+    
+    height: 500px;
+    width: 500px;
+    background-image: url(https://imagescdn.simons.ca/images/20992-24101256-11-A1_2/porous-concrete-table-lamp.jpg?__=3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image5:hover {
+    background-image: url(https://ceenli.com/cdn/shop/files/Arosa_Table_Lamp_7.jpg?v=1729025090&width=1946);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.image6 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://rukminim2.flixcart.com/image/850/1000/k6xxua80/table-lamp/t/9/f/10-natural-fiber-foziqtl201938-foziq-original-imafpakdqh6mpz5s.jpeg?q=20&crop=false);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image6:hover {
+    background-image: url(https://ceenli.com/cdn/shop/files/Tournage_Wood_Table_Lamp_1_3.jpg?v=1728996546&width=1946);
+}
+.containProduct2 {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.containProduct2 .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.containImage2 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(219, 215, 215);
+}
+
+.containImage2 .text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  height: 60px;
+}
+.containImage2 .hover {
+    font-size: 15px ;
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.containImage2 .hover p{
+    color: rgb(135, 132, 132);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+ .hover a {
+    color: black;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.containImage2:hover .hover p{
+    opacity: 1;
+}
+.containImage2:hover .hover a {
+    opacity: 1;
+}
+/*3*/
+.image7 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://ittybittyfarmhouse.com/wp-content/uploads/2022/08/IMG_8047-3-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image7:hover {
+    background-image: url(https://ittybittyfarmhouse.com/wp-content/uploads/2022/08/IMG_8100-scaled.jpg);
+}
+.image8 {
+    
+    height: 500px;
+    width: 500px;
+    background-image: url(https://i.pinimg.com/736x/fc/1f/5f/fc1f5f5e381849666a00ed0148543d03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image8:hover {
+    background-image: url(https://i.pinimg.com/736x/f8/e9/03/f8e903802f98372b8f15adc8c594a6a9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.image9 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://katiesbliss.com/wp-content/uploads/2020/03/Katies-Bliss-Closet-Organization-34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image9:hover {
+    background-image: url(https://katiesbliss.com/wp-content/uploads/2020/03/Katies-Bliss-Closet-Organization-23.jpg);
+}
+.containProduct3 {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.containProduct3 .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.containImage3 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(219, 215, 215);
+}
+
+.containImage3 .text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  height: 60px;
+}
+.containImage3 .hover {
+    font-size: 15px ;
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.containImage3 .hover p{
+    color: rgb(135, 132, 132);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+ .hover a {
+    color: black;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.containImage3:hover .hover p{
+    opacity: 1;
+}
+.containImage3:hover .hover a {
+    opacity: 1;
+}
+.containImage1:hover {
+    border: 1px solid black;
+}
+.containImage2:hover {
+    border: 1px solid black;
+}
+.containImage3:hover{
+    border: 1px solid black;
+}
+.psycho-footer {
+  margin-top: 30px;
+  background: linear-gradient(to right, #0f0f0f, #1f1f1f);
+  color: #f5f5f5;
+  text-align: center;
+  padding: 30px 10px;
+  font-family: 'Playfair Display', serif;
+  
+}
+
+.psycho-footer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+}
+
+.psycho-footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}

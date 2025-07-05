@@ -1,0 +1,561 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed; /* Makes the navbar stay at the top */
+    top: 0; /* Stick to the top of the page */
+    left: 0;
+    width: 100%; /* Make sure it stretches full width */
+    z-index: 1000; /* Keep it on top of other elements */
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds slight shadow for better look */
+}
+.lists {
+    display: flex;
+    gap: 45px;
+}
+.lists li {
+    list-style: none;
+     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+   
+}
+.lists a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transition: 0.3s ease-in;
+    transform: scaleX(0);
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.lists a:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+.lists li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: white;
+}
+.normalLists {
+    margin-right: 20px;
+}
+header h1 {
+    font-size: 30px;
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.firstSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url(pic\ accesary.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    color: white;
+}
+.firstSection h1 {
+    font-size: 100px;
+    font-family: 'General Sans', sans-serif;
+}
+.firstSection p {
+    font-size: 20px;
+    transform: translateY(-60px);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.secondSection {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.secondSection img {
+
+  width: 700px;
+  height: 600px;
+
+  border-radius: 15px;
+  display: block;
+  margin: 50px;
+  transform: scale(1);
+  transition: transform 0.2s ease-in;
+}
+.secondSection img:hover {
+  transform: scale(1.05);
+}
+.secondSection .text {
+    width: 500px;
+    font-family: "Outfit", sans-serif;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+/*second design*/
+
+/* ------- Osmo [https://osmo.supply/] ------- */
+/*  Osmo UI: https://slater.app/10324/23333.css 
+ */
+@font-face {
+  font-family: 'PP Neue Corp';
+  src: url('https://cdn.prod.website-files.com/673af51dea86ab95d124c3ee/673b0f5784f7060c0ac05534_PPNeueCorp-TightUltrabold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  background-color: var(--color-neutral-300);
+  color: var(--color-dark);
+  font-size: var(--size-font);
+  font-family: Arial, sans-serif; 
+cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b239d7aeb290a31ac5_cursor-default%402x.svg")
+      2 0,
+    auto;
+}
+
+a,
+button {
+  cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b212e6b71494aa67ff_cursor-pointer%402x.svg")
+      12 0,
+    pointer;
+}
+
+.cloneable {
+  padding: var(--container-padding);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.cursor {
+  z-index: 1000;
+  background-color: blanchedalmond;
+  opacity: 0;
+  pointer-events: none;
+  color: var(--color-light);
+  border-radius: .25em;
+  padding: .3em .75em .4em;
+  font-size: 1.15em;
+  line-height: 1.5;
+  transition: opacity .2s;
+  position: fixed;
+  inset: 0% auto auto 0%;
+}
+
+.cursor p{
+  margin: 0px;
+}
+
+.button-row {
+  grid-column-gap: .75em;
+  grid-row-gap: .75em;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.button {
+  text-transform: uppercase;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-family: PP Neue Corp, Arial, sans-serif;
+  font-size: 3vw;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.button.secondary {
+  color: black;
+}
+
+.button-bg {
+  z-index: 0;
+  background-color: black;
+  border-radius: .5em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0%;
+  
+}
+
+.button-text {
+  z-index: 1;
+  position: relative;
+}
+
+body:has( [data-cursor]:hover ) .cursor{ opacity: 1; }
+
+
+.button.secondary .button-bg{
+	background-color: rgb(219, 213, 213);
+}
+
+.button-bg{
+	transition: transform 0.5s;
+}
+
+.button:hover .button-bg{
+	transform: scale(0.95);
+}
+
+.osmo-credits {
+  z-index: 999;
+  pointer-events: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4em;
+  padding: 1em;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 1vw;
+}
+
+.osmo-credits__p {
+  pointer-events: auto;
+  color: rgba(19, 19, 19, 0.5);
+  text-align: center;
+  margin: 0;
+  font-family: PP Neue Montreal, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.osmo-credits__p-a {
+  color: black;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('https://cdn.prod.website-files.com/6819ed8312518f61b84824df/6819ed8312518f61b84825ba_PPNeueMontreal-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/*Third design*/
+.thirdSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.thirdSection .bigImage {
+  width: 50%;
+  height: auto;
+}
+.imagePart {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.thirdContent img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.image-Item {
+  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.image-Item button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+
+}
+.image-Item button:hover {
+  background-color: black;
+  color: white
+}
+.thirdContent {
+  display: flex;
+  flex-direction: column;
+}
+.thirdContent .textPart {
+  width: 500px;
+  text-align: start;
+  margin-top: 300px;
+}
+.thirdContent .textPart h1 {
+   font-family: "Monoton", sans-serif;
+   font-weight: 400;
+   font-size: 40px;
+}
+
+.thirdContent .textPart a {
+  color:black;
+  font-style: italic;
+}
+.fourthSection {
+  height: 150vh;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 200px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.fourthSection img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+
+span {
+  background-color: yellow;
+}
+.imageCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imageCard button {
+  padding: 15px 50px;
+  width: 200px;
+  align-items: center;
+  transform: translateY(-80px);
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+.imageCard button:hover {
+  color: white;
+  background-color: transparent;
+}
+.fifthSection {
+  background-color: black;
+  color: white;
+  height: 120vh;
+  width: 100%;
+}
+.forImage {
+  width: 600px;
+  height: auto;
+}
+.image2 {
+  transform: translateX(800px) translateY(-400px);
+  width: 500px;
+}
+.image1 {
+  padding-top: 100px;
+}
+.image3 {
+  margin-top: -500px;
+  padding-left: 50px;
+  color: black;
+  display: flex;
+   align-items: center;
+
+}
+.image1 p {
+  width: 600px;
+  text-align: end;
+  padding-top: 30px;
+}
+.image2 p {
+  padding-top: 30px;
+}
+.image3 p {
+  padding: 50px;
+  width: 400px;
+}
+.image1 p,
+.image2 p,
+.image3 p{
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.image1:hover p,
+.image2:hover p,
+.image3:hover p{
+  opacity: 1;
+}
+.blankSection {
+  height: 50vh;
+  background-color: white;
+  width: 100%;
+}
+
+/*dangerous design*/
+ .slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    will-change: transform; /* Add this */
+ }
+.one {
+  background: black;
+  display: block;
+  text-align: left;
+  justify-content: center;
+
+}
+.one p {
+  transform: rotate(-270deg) translateX(500px) translateY(-200px);
+  width: 300px;
+}
+.rotated-image1 {
+    /* Apply the inverse of the parent's rotation.
+       Since .wrapper rotates 90deg, you apply -90deg to the image. */
+    transform: rotate(-270deg) translateX(250px); /* Counter-rotate to make it appear upright */
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.rotated-image2{
+    transform: rotate(-270deg) translateX(600px) translateY(-50px);
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+} 
+.rotated-image3{
+    transform: rotate(-270deg) translateX(900px) translateY(-250px);
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.two {
+  background: black;
+  display: block;
+  text-align: left;
+  justify-content: center;
+}
+.two p {
+  transform: rotate(-270deg) translateX(260px) translateY(-500px);
+  width: 300px;
+}
+.three {
+  background: black;
+   display: block;
+  text-align: left;
+  justify-content: center;
+}
+.three p {
+  transform: rotate(-270deg) translateX(800px);
+  width: 300px;
+}
+.four {
+  background: black;
+}
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    will-change: transform, scroll-position; /* Add this */
+    color: white;
+ }
+
+::-webkit-scrollbar {
+  display: none;
+} 
+.containImage{
+  transform: scale(1);
+  transition:0.3s ease-in;
+}
+.containImage p {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.containImage:hover p {
+  opacity: 1;
+}
+.containImage:hover {
+  transform: scale(1.02);
+}
+.lastSection {
+  height: 50vh;
+  background-color: white;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.aboutCard {
+  background-color: rgb(211, 214, 216);
+  width: 800px;
+  padding: 20px;
+  transform: translateY(-300px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.lastSection img {
+  width: 200px;
+  height: auto;
+   border-radius: 10px;
+}
+.lastSection p {
+  width: 200px;
+}
